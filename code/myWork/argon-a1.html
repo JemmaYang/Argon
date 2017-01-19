@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Hello, World! Argon + A-Frame</title>
+    <title>Yajing Yang - Assignment 1</title>
     <meta name="description" content="Panorama Argon + A-Frame">
     <script src="../resources/js/aframe.js"></script>
     <script src="../resources/js/argon.min.js"></script>
@@ -60,18 +60,17 @@
   </div>
 
     <ar-scene desiredreality="src:url(../resources/reality/panorama/index.html);" panorama="src:url(background.jpg);lla:'-84.3931 33.7608 309';initial:true;">
+         
          <a-assets>
            <a-asset-item id="snowMan" src="snowMan.dae"></a-asset-item>
          </a-assets>
 
-         <a-entity collada-model="#snowMan" scale="20 20 20" position="0 0 5" rotation="0 90 0"></a-entity>
+         <a-entity collada-model="#snowMan" scale="20 20 20" position="0 0 -5" rotation="0 -90 0"></a-entity>
 
-        <!-- <a-entity>
-           <a-sphere position="0 1.25 10" radius="1.25" color="red"></a-sphere>
-        </a-entity> -->
-        <a-entity css-object="div: #mydiv" scale="0.01 0.01 0.01" rotation="0 180 0" position="0 0 5"></a-entity>
+       
+        <a-entity css-object="div: #mydiv" scale="0.01 0.01 0.01" rotation="0 0 0" position="0 0 -5"></a-entity>
 
-        <a-entity css-object="div: #snowflakeContainer" scale="0.01 0.01 0.01" rotation="0 60 0" position="0 0 0"></a-entity>
+        <a-entity css-object="div: #snowflakeContainer" scale="0.03 0.03 0.03" rotation="0 60 0" position="0 0 0"></a-entity>
         
 
         <ar-camera>
