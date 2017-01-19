@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Hello, World! Argon + A-Frame</title>
+    <meta name="description" content="Panorama Argon + A-Frame">
+    <script src="../resources/js/aframe.js"></script>
+    <script src="../resources/js/argon.min.js"></script>
+    <script src="../build.js"></script>
+    <script src="../resources/js/CSS3DArgonRenderer.js"></script>
+    <script src="../resources/js/CSS3DArgonHUD.js"></script>
+    <script src="../resources/js/aframe-look-at-component.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css">
+    
+  </head>
+  <style type="text/css">
+
+  
+   #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    }
+
+   .snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+    }
+
+   .snowflake:hover {
+    cursor: default;
+     }
+
+  </style>
+  <body>
+    <div id="snowflakeContainer">
+        <p class="snowflake">*</p>
+    </div>
+
+  <script src="fallingsnow_v6.js"></script>
+  </body>
+</html>
