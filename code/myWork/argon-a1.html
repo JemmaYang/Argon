@@ -24,16 +24,47 @@
     margin-bottom: 0px;
     padding: 0px 0px;
 }
+
+    #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    }
+
+   .snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+    }
+
+   .snowflake:hover {
+    cursor: default;
+     }
+
   </style>
   <body>
+  <div hidden>
+   <div id="snowflakeContainer">
+        <p class="snowflake">*</p>
+   </div>
+   </div>
+
     <div hidden>
-      <div id="mydiv" class="boxface">Argon<br>+<br>AFrame</div>
+      <div id="mydiv" class="boxface">Welcome to Snow World!</div>
     </div>
     <ar-scene desiredreality="src:url(../resources/reality/panorama/index.html);" panorama="src:url(background.jpg);lla:'-84.3931 33.7608 309';initial:true;">
         <a-entity>
-           <a-sphere position="0 1.25 -1" radius="1.25" color="red"></a-sphere>
+           <a-sphere position="0 1.25 -10" radius="1.25" color="red"></a-sphere>
         </a-entity>
         <a-entity css-object="div: #mydiv" scale="0.01 0.01 0.01" rotation="0 0 0" position="0 0 0.5"></a-entity>
+        <a-entity css-object="div: #snowflakeContainer" scale="0.01 0.01 0.01" rotation="0 0 0" position="0 0 0.5"></a-entity>
     </ar-scene>
+
+  <script src="fallingsnow_v6.js"></script>
   </body>
 </html>
