@@ -13,15 +13,15 @@
   <style type="text/css">
     .boxface {
     opacity: 0.8;
-    width: 500px;
+    width: 1000px;
     height:100px;
-    
+    background: white;
     margin-bottom: 0px;
 }
 
    .boxface2{
     opacity: 0.8;
-    width: 500px;
+    width: 300px;
     height:100px;
     background: white;
     margin-bottom: 0px;
@@ -62,7 +62,7 @@
   </div>
 
   <div hidden>
-      <div id="mydiv2" class="boxface">Let's go to snowball！</div>
+      <div id="mydiv2" class="boxface2">Let's go to snowball！</div>
   </div>
 
   <!--  Begin of AR scene -->
@@ -76,7 +76,7 @@
          </a-assets>
 
  <!--  3D models -->
-         <a-entity collada-model="#snowMan" scale="30 30 30" position="10 0 -5" rotation="0 -130 0"></a-entity>
+         <a-entity collada-model="#snowMan" scale="30 30 30" position="10 -3 -5" rotation="0 -130 0"></a-entity>
 
          <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.1 0.1 0.1" position="-10 -4 -12" >
          </a-entity>
@@ -87,7 +87,7 @@
    <!--  CSS objects-->    
         <a-entity css-object="div: #mydiv" scale="0.005 0.008 0.005" rotation="0 30 0" position="-10 3 -12"></a-entity>
 
-        <a-entity css-object="div: #mydiv2" scale="0.05 0.05 0.05" rotation="0 -140 0" position="10 2 -5"></a-entity>
+        <a-entity css-object="div: #mydiv2" scale="0.05 0.05 0.05" rotation="0 -110 0" position="10 0 -5"></a-entity>
 
 
         <a-entity css-object="div: #snowflakeContainer" scale="0.03 0.03 0.03" rotation="0 0 0" position="-10 0 -12"></a-entity>
